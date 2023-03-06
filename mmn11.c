@@ -3,7 +3,7 @@
 #define MINLINE 80
 
 int getline(char line[], int maxline);
-void removeblank(char line[]);
+void removeblank(char line[],int linelength);
 void copy(char to[], int from);
 
 int main()
