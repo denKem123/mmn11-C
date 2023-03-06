@@ -8,7 +8,7 @@ void copy(char to[], int from);
 
 int main()
 {
-    printf("Hello World");
+    printf("\nHello World\n");
     /*int len;
     char line[MAXLINE];
 
