@@ -8,7 +8,7 @@ void copy(char to[], int from);
 
 int main()
 {
-    int max, len;
+    int len;
     char line[MAXLINE];
 
     while ((len = getline(line, MAXLINE)) > 0)
