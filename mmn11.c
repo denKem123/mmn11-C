@@ -6,7 +6,7 @@ int getline(char line[], int maxline);
 void removeblank(char line[]);
 void copy(char to[], int from);
 
-main()
+int main()
 {
     int max, len;
     char line[MAXLINE];
@@ -14,6 +14,7 @@ main()
     while ((len = getline(line, MAXLINE)) > 0)
         if (len > MINLINE)
             printf("%s", line);
+    return 0;
 }
 
 /* getline: read a line into s, return length */
