@@ -8,13 +8,16 @@ void copy(char to[], int from);
 
 int main()
 {
-    int len;
+    printf("Hello World");
+    /*int len;
     char line[MAXLINE];
 
     while ((len = getline(line, MAXLINE)) > 0)
         if (len > MINLINE)
             printf("%s", line);
+            */
     return 0;
+    
 }
 
 /* getline: read a line into s, return length */
