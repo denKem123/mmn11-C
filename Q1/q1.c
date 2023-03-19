@@ -7,6 +7,7 @@ void copy(char to[], int from);
 int main()
 {
     printf("\n %d \n", my_strcmp("abc", "abc\1"));
+    printf("\n %d \n", my_strncmp("abdddd", "absdsdadfadddd", 2));
     return 0;
 }
 
