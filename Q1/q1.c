@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 int my_strcmp(char[], char[]);
-void my_strncmp(char[], char[], int);
-void copy(char to[], int from);
+int my_strncmp(char[], char[], int);
 
 int main()
 {
