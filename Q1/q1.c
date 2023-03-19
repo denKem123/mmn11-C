@@ -11,7 +11,7 @@ int main()
     printf("\n %d \n", my_strncmp("abdddd", "absdsdadfadddd", 2));
 
 */
-    printf("\n %d \n", my_strncmp("ab2", "ab1", -1));
+    printf("\n %d \n", strncmp("ab2", "ab1", -1));
     return 0;
 }
 
