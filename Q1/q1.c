@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int my_strcmp(char cs[], char ct[]);
-void my_strncmp(char cs[], char ct[]);
+int my_strcmp(char[], char[]);
+void my_strncmp(char[], char[], int);
 void copy(char to[], int from);
 
 int main()
@@ -13,26 +13,16 @@ int main()
 /* getline: read a line into s, return length */
 int my_strcmp(char cs[], char ct[])
 {
+    my_strncmp(cs, ct, -1)
+}
+
+int my_strncmp(char cs[], char ct[], int n)
+{
     int i;
-    for (i = 0; cs[i] || ct[i]; i++)
+    for (i = 0; cs[i] || ct[i] || n == i; i++)
     {
         if (cs[i] != ct[i])
             return cs[i] - ct[i];
     }
-    return cs[i] - ct[i];
-}
-
-void removeblank(char line[], int linelength)
-{
-    int i = 0;
-
-    while (line[i] != '\0' && i < linelength - 1)
-    {
-        if (line[i] == '\t' || line[i] == ' ')
-            line[i] = line[i + 1];
-        else
-            i++;
-    }
-    if (line[i] == '\t' || line[i] == ' ')
-        line[i] = '\0';
+    return n == i ? 0 : cs[i] - ct[i];
 }
