@@ -13,7 +13,7 @@ int main()
 /* getline: read a line into s, return length */
 int my_strcmp(char cs[], char ct[])
 {
-    my_strncmp(cs, ct, -1)
+    my_strncmp(cs, ct, -1);
 }
 
 int my_strncmp(char cs[], char ct[], int n)
