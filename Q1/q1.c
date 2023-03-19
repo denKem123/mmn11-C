@@ -8,14 +8,7 @@ void copy(char to[], int from);
 
 int main()
 {
-    printf("\nHello World\n");
-    /*int len;
-    char line[MAXLINE];
-
-    while ((len = getline(line, MAXLINE)) > 0)
-        if (len > MINLINE)
-            printf("%s", line);
-            */
+    printf("\n %d \n", my_strcmp("abc", "adc"));
     return 0;
 }
 
