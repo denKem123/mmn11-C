@@ -1,6 +1,4 @@
 #include <stdio.h>
-#define MAXLINE 1000
-#define MINLINE 80
 
 int my_strcmp(char cs[], char ct[]);
 void my_strncmp(char cs[], char ct[]);
@@ -8,7 +6,7 @@ void copy(char to[], int from);
 
 int main()
 {
-    printf("\n %d \n", my_strcmp("abc", "adc"));
+    printf("\n %d \n", my_strcmp("abc", "abcd"));
     return 0;
 }
 
