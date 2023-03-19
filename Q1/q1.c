@@ -1,12 +1,17 @@
 #include <stdio.h>
+#include <string.h>
 
 int my_strcmp(char[], char[]);
 int my_strncmp(char[], char[], int);
 
 int main()
 {
+    /*
     printf("\n %d \n", my_strcmp("abc", "abc\1"));
     printf("\n %d \n", my_strncmp("abdddd", "absdsdadfadddd", 2));
+
+*/
+    printf("\n %d \n", my_strncmp("xxx", "absdsdadfadddd", -1));
     return 0;
 }
 
