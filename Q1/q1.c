@@ -34,6 +34,7 @@ int main()
     } while (w != 3);
     printf("\nstr 1:%s \nstr 2:%s \nyour compare result is :%d \n", str1, str2, my_strncmp(str1, str2, n));
 
+
     /* test my_strchr*/
     char c;
     char msg3[] = "\nEnter 1 string and 1 character to test the 'my_strchr' function: \n";
