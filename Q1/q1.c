@@ -70,12 +70,12 @@ int my_strcmp(char cs[], char ct[])
 int my_strncmp(char cs[], char ct[], int n)
 {
     int i;
-    for (i = 0; cs[i] || ct[i] || n == i - 1; i++)
+    for (i = 0; (cs[i] || ct[i]) && n != i; i++)
     {
         if (cs[i] != ct[i])
             return cs[i] - ct[i];
     }
-    return n == i - 1 ? 0 : cs[i] - ct[i];
+    return n == i  ? 0 : cs[i] - ct[i];
 }
 
 /*
