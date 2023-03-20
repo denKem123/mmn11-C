@@ -12,21 +12,34 @@ int main()
     int n;
     int w;
 
-    printf("\nEnter 2 strings to use the 'my_strcmp' function: \n");
-    while (scanf("%s%s", str1, str2) != 2)
+    /* test my_strcmp*/
+    char msg1[] = "\nEnter 2 strings to test the 'my_strcmp' function: \n";
+    do
     {
-        printf("\nEnter 2 strings to use the 'my_strcmp' function: \n");
-    };
-
+        printf(msg1);
+        w = scanf("%s%s", str1, str2);
+    } while (w != 2);
     printf("\nstr 1:%s \nstr 2:%s \nyour compare result is :%d \n", str1, str2, my_strcmp(str1, str2));
 
-    printf("\nEnter positive number and 2 strings to use the 'my_strncmp' function: \n");
-    while (scanf("%s%s%d", str1, str2, &n) != 3)
+    /* test my_strncmp*/
+    char msg2[] = "\nEnter 2 strings and 1 positive number to test the 'my_strncmp' function: \n";
+    do
     {
-        printf("\nEnter positive number and 2 strings to use the 'my_strncmp' function: \n");
-    };
-
+        printf(msg2);
+        w = scanf("%s%s%d", str1, str2, &n);
+    } while (w != 3);
     printf("\nstr 1:%s \nstr 2:%s \nyour compare result is :%d \n", str1, str2, my_strncmp(str1, str2, n));
+
+    /* test my_strchr*/
+    char c;
+    char msg3[] = "\nEnter 1 string and 1 character to test the 'my_strchr' function: \n";
+    do
+    {
+        printf(msg3);
+        w = scanf("%s %c", str1, &c);
+    } while (w != 2);
+    printf("\nstr :%s \nindex of %c is :%d \n", str1, c, my_strchr(str1, c));
+
     return 0;
 }
 
