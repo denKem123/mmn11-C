@@ -16,7 +16,7 @@ int main()
         w = scanf("%s%s", str1, str2);
     } while (w != 2);
 
-    printf("\nstr 1:%s \nstr 2:%s \nyour compare result is :%d", str1, str2, my_strcmp(str1, str2));
+    printf("\nstr 1:%s \nstr 2:%s \nyour compare result is :%d \n", str1, str2, my_strcmp(str1, str2));
     return 0;
 }
 
