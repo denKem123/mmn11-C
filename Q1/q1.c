@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define MINSIZE 80
+#define MAXSIZE 80
 
 int my_strcmp(char[], char[]);
 int my_strncmp(char[], char[], int);
@@ -7,14 +7,23 @@ int my_strchr(char[], char);
 
 int main()
 {
+    char str1[] = char[MAXSIZE];
+    char str2[] = char[MAXSIZE];
+    int w;
+    do
+    {
+        printf("\nEnter 2 strings to compare: \n");
+        w = scanf("%s%s", str1, str2);
+    } while (w != 2);
 
+    printf("\nstr 1:%s \nstr 2:%s \nyour compare result is :%d", str1, str2, my_strcmp(str1, str2));
     return 0;
 }
 
 /*
     my_strcmp: compare string cs to string ct;
-    params: 
-     cs - target string; 
+    params:
+     cs - target string;
      ct - comparable string
 
     return: the returned value from my_strncmp without max char condition (-1)
@@ -26,11 +35,11 @@ int my_strcmp(char cs[], char ct[])
 
 /*
     my_strncmp: compare at most n characters of string cs to string ct;
-    params: 
+    params:
      n - max characters to compare;
-     cs - target string; 
+     cs - target string;
      ct - comparable string
-    
+
     * in case n is a negative number it will compare  cs to ct without max characters condition
     return: <0 if cs<ct,  0 if cs==ct, >0 if cs>ct
 */
@@ -47,10 +56,10 @@ int my_strncmp(char cs[], char ct[], int n)
 
 /*
     my_strncmp: find the first instance of a character in a cs
-    params: 
+    params:
      c - max characters to compare;
-     cs - target string; 
-    
+     cs - target string;
+
     return: index of the first char found or -1 if non has found
 */
 int my_strchr(char cs[], char c)
