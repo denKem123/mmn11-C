@@ -7,8 +7,8 @@ int my_strchr(char[], char);
 
 int main()
 {
-    char str1[] = char[MAXSIZE];
-    char str2[] = char[MAXSIZE];
+    char str1[MAXSIZE];
+    char str2[MAXSIZE];
     int w;
     do
     {
