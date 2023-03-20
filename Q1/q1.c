@@ -13,6 +13,7 @@ int main()
     int w;
     do
     {
+        w = -1;
         printf("\nEnter 2 strings to use the 'my_strcmp' function: \n");
         w = scanf("%s%s", str1, str2);
     } while (w != 2);
@@ -21,6 +22,7 @@ int main()
 
     do
     {
+        w = -1;
         printf("\nEnter positive number and 2 strings to use the 'my_strncmp' function: \n");
         w = scanf("%d%s%s", &n, str1, str2);
     } while (w != 3);
