@@ -11,21 +11,20 @@ int main()
     char str2[MAXSIZE];
     int n;
     int w;
-    do
+
+    printf("\nEnter 2 strings to use the 'my_strcmp' function: \n");
+    while (scanf("%s%s", str1, str2) != 2)
     {
-        w = -1;
         printf("\nEnter 2 strings to use the 'my_strcmp' function: \n");
-        w = scanf("%s%s", str1, str2);
-    } while (w != 2);
+    };
 
     printf("\nstr 1:%s \nstr 2:%s \nyour compare result is :%d \n", str1, str2, my_strcmp(str1, str2));
 
-    do
+    printf("\nEnter positive number and 2 strings to use the 'my_strncmp' function: \n");
+    while (scanf("%d%s%s", &n, str1, str2) != 3)
     {
-        w = -1;
         printf("\nEnter positive number and 2 strings to use the 'my_strncmp' function: \n");
-        w = scanf("%d%s%s", &n, str1, str2);
-    } while (w != 3);
+    };
 
     printf("\nstr 1:%s \nstr 2:%s \nyour compare result is :%d \n", str1, str2, my_strncmp(str1, str2, n));
     return 0;
