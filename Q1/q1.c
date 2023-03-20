@@ -1,8 +1,9 @@
 #include <stdio.h>
-#include <string.h>
+#define MINSIZE 80
 
 int my_strcmp(char[], char[]);
 int my_strncmp(char[], char[], int);
+int my_strchr(char[], char);
 
 int main()
 {
@@ -42,4 +43,22 @@ int my_strncmp(char cs[], char ct[], int n)
             return cs[i] - ct[i];
     }
     return n == i ? 0 : cs[i] - ct[i];
+}
+
+/*
+    my_strncmp: find the first instance of a character in a cs
+    params: 
+     c - max characters to compare;
+     cs - target string; 
+    
+    return: index of the first char found or -1 if non has found
+*/
+int my_strchr(char cs[], char c)
+{
+    for (int i = 0; cs[i]; i++)
+    {
+        if (cs[i] == c)
+            return i;
+    }
+    return -1;
 }
