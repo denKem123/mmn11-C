@@ -64,7 +64,8 @@ int my_strncmp(char cs[], char ct[], int n)
 */
 int my_strchr(char cs[], char c)
 {
-    for (int i = 0; cs[i]; i++)
+    int i;
+    for (i = 0; cs[i]; i++)
     {
         if (cs[i] == c)
             return i;
