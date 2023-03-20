@@ -21,7 +21,7 @@ int main()
     printf("\nstr 1:%s \nstr 2:%s \nyour compare result is :%d \n", str1, str2, my_strcmp(str1, str2));
 
     printf("\nEnter positive number and 2 strings to use the 'my_strncmp' function: \n");
-    while (scanf("%d%s%s", &n, str1, str2) != 3)
+    while (scanf("%s%s%d", str1, str2, &n) != 3)
     {
         printf("\nEnter positive number and 2 strings to use the 'my_strncmp' function: \n");
     };
