@@ -28,7 +28,7 @@ int main()
         printf(msg2);
         w = scanf("%s%s%d", str1, str2, &n);
     } while (w != 3);
-    printf("\n%d\n", str1, str2, n);
+    printf("\n%d\n", n);
     printf("\nstr 1:%s \nstr 2:%s \nyour compare result is :%d \n", str1, str2, my_strncmp(str1, str2, n));
 
     /* test my_strchr*/
