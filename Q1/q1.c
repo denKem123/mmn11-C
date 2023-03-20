@@ -18,6 +18,8 @@ int main()
     {
         printf(msg1);
         w = scanf("%s%s", str1, str2);
+        if (w == EOF)
+            return -1;
     } while (w != 2);
     printf("\nstr 1:%s \nstr 2:%s \nyour compare result is :%d \n", str1, str2, my_strcmp(str1, str2));
 
@@ -27,6 +29,8 @@ int main()
     {
         printf(msg2);
         w = scanf("%s%s%d", str1, str2, &n);
+        if (w == EOF)
+            return -1;
     } while (w != 3);
     printf("\nstr 1:%s \nstr 2:%s \nyour compare result is :%d \n", str1, str2, my_strncmp(str1, str2, n));
 
@@ -37,6 +41,8 @@ int main()
     {
         printf(msg3);
         w = scanf("%s %c", str1, &c);
+        if (w == EOF)
+            return -1;
     } while (w != 2);
     printf("\nstr :%s \nindex of first instance of %c is :%d \n", str1, c, my_strchr(str1, c));
 
@@ -74,7 +80,7 @@ int my_strncmp(char cs[], char ct[], int n)
         if (cs[i] != ct[i])
             return cs[i] - ct[i];
     }
-    return n == i  ? 0 : cs[i] - ct[i];
+    return n == i ? 0 : cs[i] - ct[i];
 }
 
 /*
