@@ -16,7 +16,7 @@ int main()
     char msg1[] = "\nEnter 2 strings to test the 'my_strcmp' function: \n";
     do
     {
-        printf(msg1);
+        printf("%s",msg1);
         w = scanf("%s%s", str1, str2);
         if (w == EOF)
             return -1;
@@ -27,7 +27,7 @@ int main()
     char msg2[] = "\nEnter 2 strings and 1 positive number to test the 'my_strncmp' function: \n";
     do
     {
-        printf(msg2);
+        printf("%s",msg2);
         w = scanf("%s%s%d", str1, str2, &n);
         if (w == EOF)
             return -1;
@@ -39,7 +39,7 @@ int main()
     char msg3[] = "\nEnter 1 string and 1 character to test the 'my_strchr' function: \n";
     do
     {
-        printf(msg3);
+        printf("%s",msg3);
         w = scanf("%s %c", str1, &c);
         if (w == EOF)
             return -1;
