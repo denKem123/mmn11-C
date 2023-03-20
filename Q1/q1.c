@@ -28,7 +28,6 @@ int main()
         printf(msg2);
         w = scanf("%s%s%d", str1, str2, &n);
     } while (w != 3);
-    printf("\n%d\n", n);
     printf("\nstr 1:%s \nstr 2:%s \nyour compare result is :%d \n", str1, str2, my_strncmp(str1, str2, n));
 
     /* test my_strchr*/
@@ -39,7 +38,7 @@ int main()
         printf(msg3);
         w = scanf("%s %c", str1, &c);
     } while (w != 2);
-    printf("\nstr :%s \nindex of %c is :%d \n", str1, c, my_strchr(str1, c));
+    printf("\nstr :%s \nindex of first instance of %c is :%d \n", str1, c, my_strchr(str1, c));
 
     return 0;
 }
