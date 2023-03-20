@@ -54,6 +54,7 @@ int my_strcmp(char cs[], char ct[])
 */
 int my_strncmp(char cs[], char ct[], int n)
 {
+    n -= 1;
     int i;
     for (i = 0; cs[i] || ct[i] || n == i; i++)
     {
