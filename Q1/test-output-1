@@ -1,0 +1,17 @@
+
+Enter 2 strings to test the 'my_strcmp' function: 
+
+str 1:abc 
+str 2:abc 
+your compare result is :0 
+
+Enter 2 strings and 1 positive number to test the 'my_strncmp' function: 
+
+str 1:abc 
+str 2:abd 
+your compare result is :0 
+
+Enter 1 string and 1 character to test the 'my_strchr' function: 
+
+str :abcfabb 
+index of first instance of b is :1 
