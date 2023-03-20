@@ -6,21 +6,33 @@ int my_strncmp(char[], char[], int);
 
 int main()
 {
-    /*
-    printf("\n %d \n", my_strcmp("abc", "abc\1"));
-    printf("\n %d \n", my_strncmp("abdddd", "absdsdadfadddd", 2));
 
-*/
-    printf("\n %d \n", strncmp("ab2", "ab1", -1));
     return 0;
 }
 
-/* getline: read a line into s, return length */
+/*
+    my_strcmp: compare string cs to string ct;
+    params: 
+     cs - target string; 
+     ct - comparable string
+
+    return: the returned value from my_strncmp without max char condition (-1)
+*/
 int my_strcmp(char cs[], char ct[])
 {
     return my_strncmp(cs, ct, -1);
 }
 
+/*
+    my_strncmp: compare at most n characters of string cs to string ct;
+    params: 
+     n - max characters to compare;
+     cs - target string; 
+     ct - comparable string
+    
+    * in case n is a negative number it will compare  cs to ct without max characters condition
+    return: <0 if cs<ct,  0 if cs==ct, >0 if cs>ct
+*/
 int my_strncmp(char cs[], char ct[], int n)
 {
     int i;
