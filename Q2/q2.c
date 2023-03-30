@@ -13,7 +13,7 @@ int main()
         w = scanf("%lu", &n);        
         if (w == EOF)
             return -1;
-    } while (w != 2);
+    } while (w != 1);
     printf("\nthe number you entered is: %lu", n);
     int count = bits_count(n);
     printf("\nhis number of even bits that are turned on is: %d", count);
