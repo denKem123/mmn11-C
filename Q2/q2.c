@@ -17,6 +17,8 @@ int main()
     printf("\nthe number you entered is: %lu", n);
     int count = its_count(n);
     printf("\nhis number of even bits that are turned on is: %d", count);
+
+    return 0;
 }
 
 /* 
