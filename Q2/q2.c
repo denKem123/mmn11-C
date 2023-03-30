@@ -16,7 +16,7 @@ int main()
     } while (w != 1);
     printf("\nthe number you entered is: %lu", n);
     int count = bits_count(n);
-    printf("\nhis number of even bits that are turned on is: %d", count);
+    printf("\nhis number of even bits that are turned on is: %d\n", count);
 
     return 0;
 }
