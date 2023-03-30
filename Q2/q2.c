@@ -15,7 +15,7 @@ int main()
             return -1;
     } while (w != 2);
     printf("\nthe number you entered is: %lu", n);
-    int count = its_count(n);
+    int count = bits_count(n);
     printf("\nhis number of even bits that are turned on is: %d", count);
 
     return 0;
@@ -24,7 +24,7 @@ int main()
 /* 
     its_count: return the count of all the on bits that are in an even location.
 */
-int its_count(unsigned long l)
+int bits_count(unsigned long l)
 {
     int count = 0;
     unsigned long mask;
